@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <!-- custom made Prompt dialog box-1-->
+    <div class="Dialog_box" id="prompt-box" style="display:none;">
+      <div class="dlg-header">
+
+        <span id="dlgHeader">How many character should the password be?</span>
+
+      </div>
+      <div class="dialogContainer">
+        <div class="dlg_body">
+          <div id="dlg-message"></div>
+          <input id="lengthEl" name="numHolder" type="number" value="10" class="dlg-input-el" />
+        </div>
+        <div class="dlg_footer">
+          <button id="inputEnter" class="btn1">Enter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- custom made Prompt dialog box-2-->
+    <div class="Dialog_box" id="prompt-box1" style="display:none;">
+      <div class="dlg-header">
+        <span id="dlgHeader">Do you like to include Symbols?</span>
+      </div>
+      <div class="dialogContainer">
+
+        <div class="dlg_footer">
+          <button id="yesSymbolBtn" class="btnYes">Yes</button>
+          <button id="noSymbolBtn" class="btnNo">No</button>
+        </div>
+      </div>
+    </div>
+    <!-- custom made Prompt dialog box-3-->
+    <div class="Dialog_box" id="prompt-box2" style="display:none;">
+      <div class="dlg-header">
+        <span id="dlgHeader">Do you like to include Numbers?</span>
+      </div>
+      <div class="dialogContainer">
+
+        <div class="dlg_footer">
+          <button id="yesNumberBtn" class="btnYes">Yes</button>
+          <button id="noNumberBtn" class="btnNo">No</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- custom made Prompt dialog box-4-->
+    <div class="Dialog_box" id="prompt-box3" style="display:none;">
+      <div class="dlg-header">
+        <span id="dlgHeader">Do you like to include Uppercase?</span>
+      </div>
+      <div class="dialogContainer">
+        <div class="dlg_footer">
+          <button id="yesBtnUcase" class="btnYes1">Yes</button>
+          <button id="noBtnUcase" class="btnNo1">No</button>
+        </div>
+      </div>
+    </div>
+    <!-- custom made Prompt dialog box-5-->
+    <div class="Dialog_box" id="prompt-box4" style="display:none;">
+      <div class="dlg-header">
+        <span id="dlgHeader">Do you like to include Lowercase?</span>
+      </div>
+      <div class="dialogContainer">
+        <div class="dlg_footer">
+          <button id="yesBtnLcase" class="btnyes2">Yes</button>
+          <button id="noBtnLcase" class="btnyes3">No</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- pre-designed header-->
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+
+    <!-- Second header and actual Generated passwords holder-->
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
